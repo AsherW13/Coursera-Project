@@ -8,7 +8,7 @@ class Menu(models.Model):
     inventory = models.IntegerField()  # Inventory as an integer
 
     def __str__(self):
-        return self.title  # String representation
+        return f'{self.title} : {str(self.price)}'  # String representation
 
 class Booking(models.Model):
     id = models.AutoField(primary_key=True)  # ID with auto-increment
